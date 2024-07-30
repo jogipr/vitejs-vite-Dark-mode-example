@@ -35,12 +35,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: rgb(177, 174, 174);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #2e2e30;
 }
 button:focus,
 button:focus-visible {
@@ -101,4 +101,21 @@ header {
 
 .switch-container input:checked + .slider::before {
   transform: translateX(30px);
+}
+
+.products-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+
+.products-container img{
+  height: 100px;
+  width: 100px;
+}
+
+.products-container .product{
+  border: 1px solid gray;
+  border-radius: 8px;
+  cursor: pointer;
 }
